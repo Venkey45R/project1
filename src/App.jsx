@@ -13,8 +13,10 @@ export default function App() {
   return (
     <div className="relative bg-white">
       <div className="justify-between block min-h-screen px-4 py-8 bg-customRed lg:flex lg:px-28 lg:py-0">
-        <img src={hero} alt="hero image" className="h-[420px] lg:h-[540px] w-[380px] lg:w-[420px] my-auto relative -top-4" />
-        <div className="relative left-0 my-8 lg:my-auto lg:-left-24">
+        <div className ="relative flex justify-center my-auto -top-4"> 
+          <img src={hero} alt="hero image" className="h-[380px] lg:h-[540px] w-[340px] lg:w-[420px]" />
+        </div>
+        <div className="relative left-0 my-14 lg:my-auto lg:-left-24">
           <h2 className="max-w-full lg:max-w-[652px] text-[34px] lg:text-[50px] text-white text-center font-imprima">
             We are Inviting you to our Wedding
           </h2>
