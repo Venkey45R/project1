@@ -123,13 +123,13 @@ export default function App() {
           </OwlCarousel>
           <button
             onClick={goToPrevGallerySlide}
-            className="absolute -left-10 top-[50%] transform -translate-y-1/2 p-5 bg-customPink text-white rounded-full"
+            className="absolute -left-14 lg:-left-10 top-[50%] transform -translate-y-1/2 p-5 bg-customPink text-white rounded-full"
           >
             &#8249;
           </button>
           <button
             onClick={goToNextGallerySlide}
-            className="absolute -right-10 top-[50%] transform -translate-y-1/2 p-5 bg-customPink text-white rounded-full"
+            className="absolute -right-14 lg:-right-10 top-[50%] transform -translate-y-1/2 p-5 bg-customPink text-white rounded-full"
           >
             &#8250;
           </button>
@@ -180,13 +180,13 @@ export default function App() {
           </OwlCarousel>
           <button
             onClick={goToPrevEventsSlide}
-            className="absolute -left-10 top-[50%] transform -translate-y-1/2 p-5 bg-customPink text-white rounded-full"
+            className="absolute -left-14 lg:-left-10 top-[50%] transform -translate-y-1/2 p-5 bg-customPink text-white rounded-full"
           >
             &#8249;
           </button>
           <button
             onClick={goToNextEventsSlide}
-            className="absolute -right-10 top-[50%] transform -translate-y-1/2 p-5 bg-customPink text-white rounded-full"
+            className="absolute -right-14 lg:-right-10 top-[50%] transform -translate-y-1/2 p-5 bg-customPink text-white rounded-full"
           >
             &#8250;
           </button>
