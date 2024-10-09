@@ -13,7 +13,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import OwlCarousel from "react-owl-carousel";
 import { useRef } from "react";
 import venue from "../src/assets/venue.png";
-import b from "../src/assets/b.png";
+import b from "../src/b.png";
 
 export default function App() {
   const galleryCarouselRef = useRef(null);
@@ -211,7 +211,7 @@ export default function App() {
         <div className="flex items-center justify-center ">
   <div>
     <div className="relative flex items-center justify-center">
-      <img src={bridegroom} alt="left" className="z-10 w-20 h-20 my-auto" />
+      <img src={b} alt="left" className="z-10 w-20 h-20 my-auto" />
       <div className="ml-8 lg:ml-20 bg-lightPink min-h-36 lg:min-h-40 w-[260px] lg:w-[420px] px-4 rounded-2xl">
         <p className="text-center font-bellefair text-[24px] mt-2">How we met</p>
         <p className="text-center font-bellefair text-[16px] mt-3 lg;mt-6">
@@ -222,7 +222,7 @@ export default function App() {
     </div>
 
     <div className="relative flex items-center justify-center mt-10">
-      <img src={bridegroom} alt="left" className="z-10 w-20 h-20 my-auto" />
+      <img src={b} alt="left" className="z-10 w-20 h-20 my-auto" />
       <div className="ml-8 lg:ml-20 bg-lightPink min-h-36 lg:min-h-40 w-[260px] lg:w-[420px] px-4 rounded-2xl">
         <p className="text-center font-bellefair text-[24px] mt-2">How we met</p>
         <p className="text-center font-bellefair text-[16px] mt-3 lg;mt-6">
@@ -233,7 +233,7 @@ export default function App() {
     </div>
 
     <div className="relative flex items-center justify-center mt-10">
-      <img src={bridegroom} alt="left" className="z-10 w-20 h-20 my-auto" />
+      <img src={b} alt="left" className="z-10 w-20 h-20 my-auto" />
       <div className="ml-8 lg:ml-20 bg-lightPink min-h-36 lg:min-h-40 w-[260px] lg:w-[420px] px-4 rounded-2xl">
         <p className="text-center font-bellefair text-[24px] mt-2">How we met</p>
         <p className="text-center font-bellefair text-[16px] mt-3 lg;mt-6">
