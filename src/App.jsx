@@ -13,7 +13,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import OwlCarousel from "react-owl-carousel";
 import { useRef } from "react";
 import venue from "../src/assets/venue.png";
-import bridegroom from "../src/assets/bridegroom 1.png";
+import bridegroom from "../src/assets/bridegroom1.png";
 
 export default function App() {
   const galleryCarouselRef = useRef(null);
@@ -253,7 +253,7 @@ export default function App() {
           <button className=" text-customRed bg-white font-bellefair text-[24px] px-10 rounded-full my-8 py-1 text-center">Locate</button>
         </div>
       </div>
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center min-h-screen ">
         <div>
           <h2 className=" text-[50px] lg:text-[50px] font-bellefair text-center text-customRed">We are excited</h2>
           <p className=" text-[22px] lg:text-[30px] font-bellefair text-customRed text-center my-6 max-w-[300px] lg:max-w-[900px]">s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
