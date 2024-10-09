@@ -49,7 +49,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative bg-white"> 
+    <div className="relative bg-white "> 
     <div className="justify-between block min-h-screen px-4 py-8 bg-customRed lg:flex lg:px-28 lg:py-0">
       <div className ="relative flex justify-center my-auto -top-4"> 
         <img src={hero} alt="hero image" className="h-[380px] lg:h-[540px] w-[340px] lg:w-[420px]" />
