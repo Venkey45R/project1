@@ -12,10 +12,12 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import OwlCarousel from "react-owl-carousel";
 import { useRef } from "react";
+import venue from "../src/assets/venue.png";
+import bridegroom from "../src/assets/bridegroom 1.png";
 
 export default function App() {
-  const galleryCarouselRef = useRef(null); // Separate ref for gallery carousel
-  const eventsCarouselRef = useRef(null); // Separate ref for events carousel
+  const galleryCarouselRef = useRef(null);
+  const eventsCarouselRef = useRef(null);
 
   const options = {
     responsive: {
@@ -28,21 +30,22 @@ export default function App() {
     autoplayTimeout: 6000,
     dots: false,
   };
+  
 
   const goToPrevGallerySlide = () => {
-    galleryCarouselRef.current.prev(); // Move to previous slide in gallery
+    galleryCarouselRef.current.prev();
   };
 
   const goToNextGallerySlide = () => {
-    galleryCarouselRef.current.next(); // Move to next slide in gallery
+    galleryCarouselRef.current.next();
   };
 
   const goToPrevEventsSlide = () => {
-    eventsCarouselRef.current.prev(); // Move to previous slide in events
+    eventsCarouselRef.current.prev();
   };
 
   const goToNextEventsSlide = () => {
-    eventsCarouselRef.current.next(); // Move to next slide in events
+    eventsCarouselRef.current.next();
   };
 
   return (
@@ -123,19 +126,25 @@ export default function App() {
           </OwlCarousel>
           <button
             onClick={goToPrevGallerySlide}
-            className="absolute -left-14 lg:-left-10 top-[50%] transform -translate-y-1/2 p-5 bg-customPink text-white rounded-full"
+            className="absolute -left-16 lg:-left-14 top-[50%] transform -translate-y-1/2 p-5 w-12 h-12 bg-customPink text-white rounded-full"
           >
-            &#8249;
+            <i class="fa-solid fa-chevron-left relative -top-2"></i>
           </button>
           <button
             onClick={goToNextGallerySlide}
-            className="absolute -right-14 lg:-right-10 top-[50%] transform -translate-y-1/2 p-5 bg-customPink text-white rounded-full"
+            className="absolute -right-16 lg:-right-14 top-[50%] transform -translate-y-1/2 p-5 w-12 h-12 bg-customPink text-white rounded-full"
           >
-            &#8250;
+            <i class="fa-solid fa-chevron-right relative -top-2"></i>
           </button>
         </div>
       </div>
-      <div className="min-h-screen px-20">
+      <div className="relative flex items-center justify-center h-96 bg-customRed -top-40 lg:-top-0">
+        <div className="">
+          <h3 className=" text-white my-4 font-inder text-[30px]">Are You Attending?</h3>
+          <div className=" bg-white flex my-4 justify-center text-customRed text-[24px] font-inder py-0.5 rounded-3xl">I am attending</div>
+        </div>
+      </div>
+      <div className="min-h-screen px-0 lg:px-20">
         <div>
           <h2 className="text-customRed text-[48px] lg:text-[60px] tracking-normal lg:tracking-wide text-center font-bellefair mt-0 lg:mt-20">Events</h2>
         </div>
@@ -146,7 +155,7 @@ export default function App() {
           <OwlCarousel ref={eventsCarouselRef} className="owl-theme" {...options}>
           <div className="flex justify-center">
               <div className="block bg-lightPink rounded-3xl">
-                <img src={event1} alt="event1" className="h-[350px] w-full lg:w-[300px]" />
+                <img src={event1} alt="event1" className="h-[350px] w-[400px] lg:w-[300px]" />
                 <div className="w-full text-customRed">
                   <h4 className="mt-8 text-[30px] text-center font-inder">Mehandi</h4>
                   <p className="mt-2 text-[15px] font-imprima text-center">Saturday 28, 2023</p>
@@ -157,7 +166,7 @@ export default function App() {
             </div>
             <div className="flex justify-center">
               <div className="block bg-lightPink rounded-3xl">
-                <img src={event2} alt="event2" className="h-[350px] w-full lg:w-[300px]" />
+                <img src={event2} alt="event2" className="h-[350px] w-[400px] lg:w-[300px]" />
                 <div className="w-full text-customRed">
                   <h4 className="mt-8 text-[30px] text-center font-inder">Haldi</h4>
                   <p className="mt-2 text-[15px] font-imprima text-center">Saturday 28, 2023</p>
@@ -168,7 +177,7 @@ export default function App() {
             </div>
             <div className="flex justify-center">
               <div className="block bg-lightPink rounded-3xl">
-                <img src={event3} alt="event3" className="h-[350px] w-[550px] lg:w-[300px]" />
+                <img src={event3} alt="event3" className="h-[350px] w-[400px] lg:w-[300px]" />
                 <div className="w-full text-customRed">
                   <h4 className="mt-8 text-[30px] text-center font-inder">Reception</h4>
                   <p className="mt-2 text-[15px] font-imprima text-center">Saturday 28, 2023</p>
@@ -180,17 +189,81 @@ export default function App() {
           </OwlCarousel>
           <button
             onClick={goToPrevEventsSlide}
-            className="absolute -left-14 lg:-left-10 top-[50%] transform -translate-y-1/2 p-5 bg-customPink text-white rounded-full"
+            className="absolute -left-0 lg:-left-10 top-[50%] transform -translate-y-1/2 w-12 h-12 bg-customPink text-white rounded-full"
           >
-            &#8249;
+            <i class="fa-solid fa-chevron-left"></i>
           </button>
           <button
             onClick={goToNextEventsSlide}
-            className="absolute -right-14 lg:-right-10 top-[50%] transform -translate-y-1/2 p-5 bg-customPink text-white rounded-full"
+            className="absolute -right-0 lg:-right-10 top-[50%] transform -translate-y-1/2 w-12 h-12 bg-customPink text-white rounded-full"
           >
-            &#8250;
+            <i class="fa-solid fa-chevron-right"></i>
           </button>
         </div>
+      </div>
+      <div className="min-h-screen ">
+      <div>
+          <h2 className="text-customRed text-[48px] lg:text-[60px] tracking-normal lg:tracking-wide text-center font-bellefair mt-0 lg:mt-20">Our Story</h2>
+        </div>
+        <div className="flex justify-center mb-14">
+          <img src={border} alt="border" className="w-[200px] lg:h-auto h-[7px]" />
+        </div>
+        <div className="flex items-center justify-center ">
+  <div>
+    <div className="relative flex items-center justify-center">
+      <img src={bridegroom} alt="left" className="z-10 w-20 h-20 my-auto" />
+      <div className="ml-8 lg:ml-20 bg-lightPink min-h-36 lg:min-h-40 w-[260px] lg:w-[420px] px-4 rounded-2xl">
+        <p className="text-center font-bellefair text-[24px] mt-2">How we met</p>
+        <p className="text-center font-bellefair text-[16px] mt-3 lg;mt-6">
+          since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+        </p>
+      </div>
+      <div className="absolute left-[36px] top-20 h-full w-[1px] bg-customRed z-0"></div>
+    </div>
+
+    <div className="relative flex items-center justify-center mt-10">
+      <img src={bridegroom} alt="left" className="z-10 w-20 h-20 my-auto" />
+      <div className="ml-8 lg:ml-20 bg-lightPink min-h-36 lg:min-h-40 w-[260px] lg:w-[420px] px-4 rounded-2xl">
+        <p className="text-center font-bellefair text-[24px] mt-2">How we met</p>
+        <p className="text-center font-bellefair text-[16px] mt-3 lg;mt-6">
+          since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+        </p>
+      </div>
+      <div className="absolute left-[36px] top-20 h-full w-[1px] bg-customRed z-0"></div>
+    </div>
+
+    <div className="relative flex items-center justify-center mt-10">
+      <img src={bridegroom} alt="left" className="z-10 w-20 h-20 my-auto" />
+      <div className="ml-8 lg:ml-20 bg-lightPink min-h-36 lg:min-h-40 w-[260px] lg:w-[420px] px-4 rounded-2xl">
+        <p className="text-center font-bellefair text-[24px] mt-2">How we met</p>
+        <p className="text-center font-bellefair text-[16px] mt-3 lg;mt-6">
+          since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <div className="block max-w-full min-h-screen gap-20 px-10 py-10 lg:px-20 lg:py-0 lg:flex bg-customRed">
+        <img src={venue} alt="venue" className="my-auto rounded-xl"/>
+        <div className="my-8 lg:my-24">
+          <h4 className=" text-[75px] lg:text-[120px] tracking-widest font-bellefair text-white">Venue.</h4>
+          <p className=" max-w-full lg:max-w-[450px] mt-2 text-[22px] lg:text-[26px] font-inder text-white">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, w</p>
+          <button className=" text-customRed bg-white font-bellefair text-[24px] px-10 rounded-full my-8 py-1 text-center">Locate</button>
+        </div>
+      </div>
+      <div className="flex items-center justify-center min-h-screen">
+        <div>
+          <h2 className=" text-[50px] lg:text-[50px] font-bellefair text-center text-customRed">We are excited</h2>
+          <p className=" text-[22px] lg:text-[30px] font-bellefair text-customRed text-center my-6 max-w-[300px] lg:max-w-[900px]">s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+          <div className="flex justify-center mt-10 lg:mt-14">
+            <button className=" text-[24px] font-bellefair text-center px-8 rounded-full py-2 lg:py-0.5 bg-customRed text-white">Back to top</button>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center min-h-16 bg-customRed">
+        <p className=" text-white font-bellefair text-[16px] lg:text-[24px] my-auto">A personalised experience with ❤️ by eSubhalekha.com</p>
       </div>
     </div>
   );
