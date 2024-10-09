@@ -13,7 +13,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import OwlCarousel from "react-owl-carousel";
 import { useRef } from "react";
 import venue from "../src/assets/venue.png";
-import bridegroom from "../src/assets/brideround.png";
+import b from "../src/assets/b.png";
 
 export default function App() {
   const galleryCarouselRef = useRef(null);
