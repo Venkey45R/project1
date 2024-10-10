@@ -115,13 +115,13 @@ export default function App() {
         <div className="relative">
           <OwlCarousel ref={galleryCarouselRef} className="owl-theme" {...options}>
             <div className="flex justify-center mx-0 lg:mx-4">
-              <img src={img1} alt="image1" className="w-full h-[480px] lg:w-[280px] lg:h-[500px]" />
+              <img src={img1} alt="image1" className="w-[400px] h-[480px] lg:w-[280px] lg:h-[500px]" />
             </div>
             <div className="flex justify-center mx-0 lg:mx-4">
-              <img src={img2} alt="image2" className="w-full h-[480px] lg:w-auto lg:h-[500px]" />
+              <img src={img2} alt="image2" className="w-[400px] h-[480px] lg:w-[280px] lg:h-[500px]" />
             </div>
             <div className="flex justify-center mx-0 lg:mx-4">
-              <img src={img3} alt="image3" className="w-full h-[480px] lg:w-auto lg:h-[500px]" />
+              <img src={img3} alt="image3" className="w-[400px] h-[480px] lg:w-[280px] lg:h-[500px]" />
             </div>
           </OwlCarousel>
           <button
@@ -154,7 +154,7 @@ export default function App() {
         <div className="relative">
           <OwlCarousel ref={eventsCarouselRef} className="owl-theme" {...options}>
           <div className="flex justify-center">
-              <div className="block bg-lightPink rounded-3xl">
+              <div className="block bg-lightPink rounded-3xl lg:w-[350px] w-[280px]">
                 <img src={event1} alt="event1" className="h-[350px] w-[400px] lg:w-[300px]" />
                 <div className="w-full text-customRed">
                   <h4 className="mt-8 text-[30px] text-center font-inder">Mehandi</h4>
@@ -165,7 +165,7 @@ export default function App() {
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="block bg-lightPink rounded-3xl">
+              <div className="block bg-lightPink rounded-3xl lg:w-[350px] w-[280px]">
                 <img src={event2} alt="event2" className="h-[350px] w-[400px] lg:w-[300px]" />
                 <div className="w-full text-customRed">
                   <h4 className="mt-8 text-[30px] text-center font-inder">Haldi</h4>
@@ -176,7 +176,7 @@ export default function App() {
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="block bg-lightPink rounded-3xl">
+              <div className="block bg-lightPink rounded-3xl lg:w-[350px] w-[280px]">
                 <img src={event3} alt="event3" className="h-[350px] w-[400px] lg:w-[300px]" />
                 <div className="w-full text-customRed">
                   <h4 className="mt-8 text-[30px] text-center font-inder">Reception</h4>
@@ -189,13 +189,13 @@ export default function App() {
           </OwlCarousel>
           <button
             onClick={goToPrevEventsSlide}
-            className="absolute -left-0 lg:-left-10 top-[50%] transform -translate-y-1/2 w-12 h-12 bg-customPink text-white rounded-full"
+            className="absolute left-2 lg:-left-10 top-[50%] transform -translate-y-1/2 w-12 h-12 bg-customPink text-white rounded-full"
           >
             <i class="fa-solid fa-chevron-left"></i>
           </button>
           <button
             onClick={goToNextEventsSlide}
-            className="absolute -right-0 lg:-right-10 top-[50%] transform -translate-y-1/2 w-12 h-12 bg-customPink text-white rounded-full"
+            className="absolute right-2 lg:-right-10 top-[50%] transform -translate-y-1/2 w-12 h-12 bg-customPink text-white rounded-full"
           >
             <i class="fa-solid fa-chevron-right"></i>
           </button>
@@ -210,7 +210,7 @@ export default function App() {
         </div>
         <div className="flex items-center justify-center ">
   <div>
-    <div className="relative flex items-center justify-center">
+    <div className="relative flex items-center justify-center mb-10">
       <img src={b} alt="left" className="z-10 w-20 h-20 my-auto" />
       <div className="ml-8 lg:ml-20 bg-lightPink min-h-36 lg:min-h-40 w-[260px] lg:w-[420px] px-4 rounded-2xl">
         <p className="text-center font-bellefair text-[24px] mt-2">How we met</p>
@@ -245,7 +245,7 @@ export default function App() {
 </div>
 
       </div>
-      <div className="block max-w-full min-h-screen gap-20 px-10 py-10 lg:px-20 lg:py-0 lg:flex bg-customRed">
+      <div className="relative top-0 block max-w-full min-h-screen gap-20 px-10 py-10 lg:top-16 lg:px-20 lg:py-0 lg:flex bg-customRed">
         <img src={venue} alt="venue" className="my-auto rounded-xl"/>
         <div className="my-8 lg:my-24">
           <h4 className=" text-[75px] lg:text-[120px] tracking-widest font-bellefair text-white">Venue.</h4>
@@ -256,7 +256,7 @@ export default function App() {
       <div className="flex items-center justify-center min-h-screen ">
         <div>
           <h2 className=" text-[50px] lg:text-[50px] font-bellefair text-center text-customRed">We are excited</h2>
-          <p className=" text-[22px] lg:text-[30px] font-bellefair text-customRed text-center my-6 max-w-[300px] lg:max-w-[900px]">s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+          <p className=" text-[22px] lg:text-[30px] font-bellefair text-customRed text-center my-6 max-w-[300px] lg:max-w-[700px]">s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
           <div className="flex justify-center mt-10 lg:mt-14">
             <button className=" text-[24px] font-bellefair text-center px-8 rounded-full py-2 lg:py-0.5 bg-customRed text-white">Back to top</button>
           </div>
