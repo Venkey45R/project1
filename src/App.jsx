@@ -188,17 +188,18 @@ export default function App() {
             </div>
           </OwlCarousel>
           <button
-            onClick={goToPrevEventsSlide}
-            className="absolute left-1 lg:-left-10 top-[50%] transform -translate-y-1/2 w-12 h-12 bg-customPink text-white rounded-full"
-          >
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <button
-            onClick={goToNextEventsSlide}
-            className="absolute right-1 lg:-right-10 top-[50%] transform -translate-y-1/2 w-12 h-12 bg-customPink text-white rounded-full"
-          >
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
+          onClick={goToPrevEventsSlide}
+          className="absolute z-50 left-1 lg:-left-10 top-[50%] transform -translate-y-1/2 w-12 h-12 bg-customPink text-white rounded-full"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button
+          onClick={goToNextEventsSlide}
+          className="absolute z-50 right-1 lg:-right-10 top-[50%] transform -translate-y-1/2 w-12 h-12 bg-customPink text-white rounded-full"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
         </div>
       </div>
       <div className="min-h-screen ">
