@@ -50,26 +50,26 @@ export default function App() {
 
   return (
     <div className="relative bg-white "> 
-    <div className="justify-between block min-h-screen px-4 py-8 bg-customRed 2xl:flex lg:px-28 lg:py-0">
+    <div className="justify-between block min-h-screen px-4 py-8 bg-customRed xl:flex lg:px-28 lg:py-0">
       <div className ="relative flex justify-center my-auto -top-4"> 
         <img src={hero} alt="hero image" className="h-[380px] lg:h-[540px] w-[340px] lg:w-[420px]" />
       </div>
       <div className="relative -left-0 my-14 lg:my-auto lg:-left-24">
-        <h2 className="max-w-full lg:max-w-[652px] text-[32px] mx-auto 2xl:text-[50px] text-white text-center font-imprima">
+        <h2 className="max-w-full lg:max-w-[652px] text-[32px] mx-auto xl:text-[50px] text-white text-center font-imprima">
           We are Inviting you to our Wedding
         </h2>
         <div className="flex my-10 lg:my-10 mx-auto justify-between font-imprima text-white max-w-[300px] lg:max-w-[480px]">
           <div className="block">
-            <h1 className="text-[40px] 2xl:text-[75px] text-center">61</h1>
-            <p className="text-[16px] text-center 2xl:text-[30px] font-bold text-customPink font-rubik">Days</p>
+            <h1 className="text-[40px] xl:text-[75px] text-center">61</h1>
+            <p className="text-[16px] text-center xl:text-[30px] font-bold text-customPink font-rubik">Days</p>
           </div>
           <div className="block">
-            <h1 className="text-[40px] 2xl:text-[75px] text-center">15</h1>
-            <p className="text-[16px] text-center 2xl:text-[30px] font-bold text-customPink font-rubik">Hours</p>
+            <h1 className="text-[40px] xl:text-[75px] text-center">15</h1>
+            <p className="text-[16px] text-center xl:text-[30px] font-bold text-customPink font-rubik">Hours</p>
           </div>
           <div className="block">
-            <h1 className="text-[40px] 2xl:text-[75px] text-center">12</h1>
-            <p className="text-[16px] text-center 2xl:text-[30px] font-rubik font-bold text-customPink">Minutes</p>
+            <h1 className="text-[40px] xl:text-[75px] text-center">12</h1>
+            <p className="text-[16px] text-center xl:text-[30px] font-rubik font-bold text-customPink">Minutes</p>
           </div>
         </div>
       </div>
@@ -246,7 +246,7 @@ export default function App() {
 </div>
 
       </div>
-      <div className="relative top-0 block max-w-full min-h-screen gap-20 px-10 py-10 lg:top-16 lg:px-20 lg:py-0 2xl:flex bg-customRed">
+      <div className="relative top-0 block max-w-full min-h-screen gap-20 px-10 py-10 lg:top-16 lg:px-20 lg:py-0 xl:flex bg-customRed">
         <img src={venue} alt="venue" className="my-auto rounded-xl" />
         <div className="my-24 lg:my-24">
           <h1 className=" text-[40px] lg:text-[120px] tracking-widest font-bellefair text-white">Venue.</h1>
