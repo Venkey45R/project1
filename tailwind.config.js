@@ -9,7 +9,7 @@ export default {
       colors: {
         customRed: '#990011',
         customPink: '#FB98A2',
-        Pink2: '#FFC5CB',
+        Pink2: '#FFB6C1',
         lightPink: '#FFB6C1',
       },
       fontFamily: {

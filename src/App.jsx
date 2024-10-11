@@ -50,26 +50,26 @@ export default function App() {
 
   return (
     <div className="relative bg-white "> 
-    <div className="justify-between block min-h-screen px-4 py-8 bg-customRed lg:flex lg:px-28 lg:py-0">
+    <div className="justify-between block min-h-screen px-4 py-8 bg-customRed 2xl:flex lg:px-28 lg:py-0">
       <div className ="relative flex justify-center my-auto -top-4"> 
         <img src={hero} alt="hero image" className="h-[380px] lg:h-[540px] w-[340px] lg:w-[420px]" />
       </div>
-      <div className="relative left-0 my-14 lg:my-auto lg:-left-24">
-        <h2 className="max-w-full lg:max-w-[652px] text-[32px] lg:text-[50px] text-white text-center font-imprima">
+      <div className="relative -left-0 my-14 lg:my-auto lg:-left-24">
+        <h2 className="max-w-full lg:max-w-[652px] text-[32px] mx-auto 2xl:text-[50px] text-white text-center font-imprima">
           We are Inviting you to our Wedding
         </h2>
         <div className="flex my-10 lg:my-10 mx-auto justify-between font-imprima text-white max-w-[300px] lg:max-w-[480px]">
           <div className="block">
-            <h1 className="text-[40px] lg:text-[75px] text-center">61</h1>
-            <p className="text-[16px] text-center lg:text-[30px] font-bold text-customPink font-rubik">Days</p>
+            <h1 className="text-[40px] 2xl:text-[75px] text-center">61</h1>
+            <p className="text-[16px] text-center 2xl:text-[30px] font-bold text-customPink font-rubik">Days</p>
           </div>
           <div className="block">
-            <h1 className="text-[40px] lg:text-[75px] text-center">15</h1>
-            <p className="text-[16px] text-center lg:text-[30px] font-bold text-customPink font-rubik">Hours</p>
+            <h1 className="text-[40px] 2xl:text-[75px] text-center">15</h1>
+            <p className="text-[16px] text-center 2xl:text-[30px] font-bold text-customPink font-rubik">Hours</p>
           </div>
           <div className="block">
-            <h1 className="text-[40px] lg:text-[75px] text-center">12</h1>
-            <p className="text-[16px] text-center lg:text-[30px] font-rubik font-bold text-customPink">Minutes</p>
+            <h1 className="text-[40px] 2xl:text-[75px] text-center">12</h1>
+            <p className="text-[16px] text-center 2xl:text-[30px] font-rubik font-bold text-customPink">Minutes</p>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@ export default function App() {
       <h2 className="text-customRed text-[32px] lg:text-[60px] tracking-normal lg:tracking-wide text-center font-bellefair mt-7 lg:mt-20">Gudivada Vari Pelli Sandadi</h2>
     </div>
     <div className="flex justify-center ">
-      <img src={border} alt="border" className=" w-[200px] lg:w-auto h-[7px] lg:h-auto" />
+      <img src={border} alt="border" className=" w-[200px] lg:w-[350px] h-[7px] lg:h-[8px]" />
     </div>
     <div className="justify-center block gap-32 my-20 lg:flex lg:my-28">
       <div className=" my-5 bg-Pink2 w-[320px] mx-auto lg:mx-0 lg:w-[400px] h-[310px] lg:h-[360px] flex justify-center">
@@ -110,7 +110,7 @@ export default function App() {
           <h2 className="text-customRed text-[32px] lg:text-[60px] tracking-normal lg:tracking-wide text-center font-bellefair mt-0 lg:mt-20">Gallery</h2>
         </div>
         <div className="flex justify-center mb-14">
-          <img src={border} alt="border" className="w-[120px] lg:h-auto h-[4px]" />
+          <img src={border} alt="border" className="w-[120px] lg:w-[200px] lg:h-auto h-[7px]" />
         </div>
         <div className="relative">
           <OwlCarousel ref={galleryCarouselRef} className="owl-theme" {...options}>
@@ -149,7 +149,7 @@ export default function App() {
           <h2 className="text-customRed text-[32px] lg:text-[60px] tracking-normal lg:tracking-wide text-center font-bellefair mt-0 lg:mt-20">Events</h2>
         </div>
         <div className="flex justify-center mb-14">
-          <img src={border} alt="border" className="w-[120px] lg:h-auto h-[4px]" />
+          <img src={border} alt="border" className="w-[120px] lg:w-[200px] lg:h-[7px] h-[4px]" />
         </div>
         <div className="relative">
           <OwlCarousel ref={eventsCarouselRef} className="owl-theme" {...options}>
@@ -207,7 +207,7 @@ export default function App() {
           <h2 className="text-customRed text-[32px] lg:text-[60px] tracking-normal lg:tracking-wide text-center font-bellefair mt-0 lg:mt-20">Our Story</h2>
         </div>
         <div className="flex justify-center mb-14">
-          <img src={border} alt="border" className="w-[120px] lg:h-auto h-[4px]" />
+          <img src={border} alt="border" className="w-[120px] lg:w-[200px] lg:h-[7px] h-[4px]" />
         </div>
         <div className="flex items-center justify-center ">
   <div>
@@ -246,8 +246,8 @@ export default function App() {
 </div>
 
       </div>
-      <div className="relative top-0 block max-w-full min-h-screen gap-20 px-10 py-10 lg:top-16 lg:px-20 lg:py-0 lg:flex bg-customRed">
-        <img src={venue} alt="venue" className="my-auto rounded-xl"/>
+      <div className="relative top-0 block max-w-full min-h-screen gap-20 px-10 py-10 lg:top-16 lg:px-20 lg:py-0 2xl:flex bg-customRed">
+        <img src={venue} alt="venue" className="my-auto rounded-xl" />
         <div className="my-24 lg:my-24">
           <h1 className=" text-[40px] lg:text-[120px] tracking-widest font-bellefair text-white">Venue.</h1>
           <p className=" max-w-full lg:max-w-[450px] my-6 text-[16px] lg:text-[26px] font-inder text-white">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, w</p>
